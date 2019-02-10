@@ -41,9 +41,10 @@ export class Tab2Page implements OnInit {
     }
 
     navigateToSelf() {
-        this.router.navigate(['/tabs', 'tab2'],
+        this.router.navigate([],
                              {
                                  queryParams: {random: this.getRandomNumber()},
+                                 relativeTo: this.route
                              });
     }
 }
