@@ -4,7 +4,6 @@ import {NgModule}      from '@angular/core';
 import {CommonModule}  from '@angular/common';
 import {FormsModule}   from '@angular/forms';
 import {Tab2Page}      from './tab2.page';
-import {ParamTestPage} from './param-test/param-test.page';
 
 @NgModule({
               imports     : [
@@ -13,10 +12,9 @@ import {ParamTestPage} from './param-test/param-test.page';
                   FormsModule,
                   RouterModule.forChild([
                                             {path: '', component: Tab2Page},
-                                            {path: 'new', component: ParamTestPage},
-                                            {path: 'new/:id', component: ParamTestPage},
+                                            {path: ':id', component: Tab2Page},
                                         ])
               ],
-              declarations: [Tab2Page, ParamTestPage]
+              declarations: [Tab2Page]
           })
 export class Tab2PageModule {}

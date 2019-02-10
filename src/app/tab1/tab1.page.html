@@ -7,17 +7,18 @@
 </ion-header>
 
 <ion-content>
+
     <ion-item>
-        <ion-button (click)="router.navigate(['/tabs', 'tab2', 'new'], { queryParams: { myparam: 111}})">Only queryParam: 111</ion-button>
+        <ion-button (click)="router.navigate(['/tabs', 'tab2'], { queryParams: { myparam: 111}})">Only queryParam: 111</ion-button>
     </ion-item>
     <ion-item>
-        <ion-button (click)="router.navigate(['/tabs', 'tab2', 'new'], { queryParams: { myparam: 222}})">Only queryParam: 222</ion-button>
+        <ion-button (click)="router.navigate(['/tabs', 'tab2'], { queryParams: { myparam: 222}})">Only queryParam: 222</ion-button>
     </ion-item>
     <ion-item>
-        <ion-button (click)="router.navigate(['/tabs', 'tab2', 'new', '123'], { queryParams: { myparam: 333}})">id: 123 and queryParam 333</ion-button>
+        <ion-button (click)="router.navigate(['/tabs', 'tab2', '123'], { queryParams: { myparam: 333}})">id: 123 and queryParam 333</ion-button>
     </ion-item>
     <ion-item>
-        <ion-button (click)="router.navigate(['/tabs', 'tab2', 'new', '789'], { queryParams: { myparam: 444}})">id: 789 and queryParam 444</ion-button>
+        <ion-button (click)="router.navigate(['/tabs', 'tab2', '789'], { queryParams: { myparam: 444}})">id: 789 and queryParam 444</ion-button>
     </ion-item>
 
 </ion-content>
