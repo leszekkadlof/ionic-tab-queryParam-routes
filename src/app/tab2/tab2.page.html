@@ -1,12 +1,17 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Two
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-back-button></ion-back-button>
+        <ion-title>
+            Tab Two
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <p>Query Param: {{getQueryParam()}}</p>
-  <p>Param: {{getParam()}}</p>
+    <p>Query Param: {{getQueryParam()}}</p>
+    <p>Param: {{getParam()}}</p>
+
+    <ion-item>
+        <ion-button (click)="navigateToSelf()">Calling Tab2 with a random parameter</ion-button>
+    </ion-item>
 </ion-content>
